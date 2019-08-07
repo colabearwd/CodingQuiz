@@ -30,27 +30,28 @@ class Solution:
 
 
 
+if __name__ == '__main__':
 
 
-head = TreeNode(1)
-n2 = TreeNode(2)
-n3 = TreeNode(3)
-n4 = TreeNode(4)
-n5 = TreeNode(5)
-n6 = TreeNode(6)
-n7 = TreeNode(7)
-n8 = TreeNode(8)
-head.left = n2
-n2.left = n4
-head.right = n3
-n3.left = n5
-n3.right = n6
-n5.left = n7
-n5.right = n8
+    head = TreeNode(1)
+    n2 = TreeNode(2)
+    n3 = TreeNode(3)
+    n4 = TreeNode(4)
+    n5 = TreeNode(5)
+    n6 = TreeNode(6)
+    n7 = TreeNode(7)
+    n8 = TreeNode(8)
+    head.left = n2
+    n2.left = n4
+    head.right = n3
+    n3.left = n5
+    n3.right = n6
+    n5.left = n7
+    n5.right = n8
 
-res = Solution.Level_Print(Solution,head)
+    s =Solution()
+    res = s.Level_Print(head)
+    print(res)
 
-print(res)
-
-for re in res:
-    print(' '.join(str(i) for i in re))
+    for re in res:
+        print(' '.join(str(i) for i in re))

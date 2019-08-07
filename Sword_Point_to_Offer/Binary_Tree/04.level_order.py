@@ -22,24 +22,32 @@ class Solution:
                 stack1.append(node.right)
                 stack2.append(node.right)
 
+
+        val_res = []
         while stack2:
-            print(stack2.pop(0).val)
+            val_res.append(stack2.pop(0).val)
+        return val_res
 
 
-head = TreeNode(1)
-n2 = TreeNode(2)
-n3 = TreeNode(3)
-n4 = TreeNode(4)
-n5 = TreeNode(5)
-n6 = TreeNode(6)
-n7 = TreeNode(7)
-n8 = TreeNode(8)
-head.left = n2
-n2.left = n4
-head.right = n3
-n3.left = n5
-n3.right = n6
-n5.left = n7
-n5.right = n8
+if __name__ == '__main__':
 
-Solution.Level_Print(Solution, head)
+    head = TreeNode(1)
+    n2 = TreeNode(2)
+    n3 = TreeNode(3)
+    n4 = TreeNode(4)
+    n5 = TreeNode(5)
+    n6 = TreeNode(6)
+    n7 = TreeNode(7)
+    n8 = TreeNode(8)
+    head.left = n2
+    n2.left = n4
+    head.right = n3
+    n3.left = n5
+    n3.right = n6
+    n5.left = n7
+    n5.right = n8
+
+    s = Solution()
+    res = s.Level_Print(head)
+    print(res)
+
