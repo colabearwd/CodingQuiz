@@ -5,6 +5,7 @@
         aaaabbbcccccdddeeeeeee
            
     输出：
+        a_4_b_3_c_5_d_3_e_7
         
     说明：
     
